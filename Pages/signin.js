@@ -28,10 +28,27 @@ function view() {
 //sumbit the query to form action mail and go back to first view of the page
 function submit() {
     document.getElementById("query-form").submit();
+    let myArray = [email, password];
+    $.ajax({
+        type: "POST",
+        url: "insert.php",
+        data: { data: myArray }
+    }).done(function (msg) {
+        alert("Data Saved: " + msg);
+    });
     alert("Successfully submitted!");
     document.getElementById("full").style.display = "none";
-    document.forms["query-form"]["mail"].innerHTML = "";
+    document.forms["query-form"]["email"].innerHTML = "";
     document.forms["query-form"]["password"].innerHTML = "";
+    // JavaScript code
+
+
+    // PHP code
+    /*<?php
+    $data = $_POST['data'];
+    // process $data
+    echo "Data received";
+    ?>*/
 
 }
 //back to the normal view

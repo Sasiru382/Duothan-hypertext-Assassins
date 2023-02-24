@@ -1,4 +1,4 @@
-document.getElementById("").style.display = "none";
+document.getElementById("full").style.display = "none";
 function view() {
     let pharmacy_name = document.forms["query-form"]["name"].value;
     if (pharmacy_name == "") {
@@ -58,6 +58,14 @@ function view() {
 //sumbit the query to form action mail and go back to first view of the page
 function submit() {
     document.getElementById("query-form").submit();
+    let myArray = [pharmacy_name, email, address, phone, licence, password, confirm_password];
+    $.ajax({
+        type: "POST",
+        url: "insert.php",
+        data: { data: myArray }
+    }).done(function (msg) {
+        alert("Data Saved: " + msg);
+    });
     alert("Successfully submitted!");
     document.getElementById("full").style.display = "none";
     document.forms["query-form"]["name"].innerHTML = "";
@@ -72,6 +80,6 @@ function submit() {
 }
 //back to the normal view
 function edit() {
-    document.getElementById("").style.display = "none";
+    document.getElementById("full").style.display = "none";
 
 }
