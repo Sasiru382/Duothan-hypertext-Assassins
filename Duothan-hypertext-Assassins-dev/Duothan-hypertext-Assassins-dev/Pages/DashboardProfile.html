@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pharmacy Dashboard Profile</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="DashboardProfile.css">
+    <script src="Dashboard.js"></script>
+    
+</head>
+<body>
+	<header>
+		<img src="My project.png" alt="Pharmacy Logo">
+		<h1>Pharmacy Name</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="Inventory.html">Inventory</a></li>
+			<li><a href="DashboardProfile.html">Profile</a></li>
+			<li><a href="#">Logout</a></li>
+		</ul>
+	</nav>
+	<main>
+		<h2>Pharmacy Information</h2>
+		<form id="pharmacy-form" action="#" method="post">
+			<label for="pharmacy-name">Pharmacy Name:</label>
+			<input type="text" id="pharmacy-name" name="pharmacy-name" required>
+			<label for="pharmacy-address">Pharmacy Address:</label>
+			<input type="text" id="pharmacy-address" name="pharmacy-address" required>
+			<label for="pharmacy-phone">Pharmacy Phone Number:</label>
+			<input type="tel" id="pharmacy-phone" name="pharmacy-phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+			<label for="pharmacy-email">Pharmacy Email:</label>
+			<input type="email" id="pharmacy-email" name="pharmacy-email" required>
+			<label for="pharmacy-website">Pharmacy Website:</label>
+			<input type="url" id="pharmacy-website" name="pharmacy-website" required>
+			<label for="pharmacy-hours">Operating Hours:</label>
+			<textarea id="pharmacy-hours" name="pharmacy-hours" required></textarea>
+			<label for="pharmacy-license">Pharmacy License Number:</label>
+			<input type="text" id="pharmacy-license" name="pharmacy-license" required>
+			<h2>Owner Information</h2>
+			<label for="owner-name">Owner Name:</label>
+			<input type="text" id="owner-name" name="owner-name" required>
+			<label for="owner-address">Owner Address:</label>
+			<input type="text" id="owner-address" name="owner-address" required>
+			<label for="owner-phone">Owner Phone Number:</label>
+			<input type="tel" id="owner-phone" name="owner-phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+			<label for="owner-email">Owner Email:</label>
+			<input type="email" id="owner-email" name="owner-email" required>
+			<label for="owner-nic">Owner NIC Number:</label>
+			<input type="text" id="owner-nic" name="owner-nic" required>
+			<button type="submit">Save</button>
+		</form>
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>

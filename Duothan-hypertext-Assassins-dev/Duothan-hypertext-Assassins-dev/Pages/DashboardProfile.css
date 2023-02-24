@@ -1,0 +1,198 @@
+/* Reset default browser styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Set default font and background color */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f8f8f8;
+}
+
+/* Style the header section */
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #2d6cdf;
+	padding: 1rem;
+	color: #fff;
+}
+
+header img {
+	max-height: 4rem;
+}
+
+/* Style the navigation section */
+nav {
+	background-color: #fff;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+}
+
+nav li {
+	margin-right: 1rem;
+}
+
+nav a {
+	display: block;
+	padding: 0.5rem;
+	color: #2d6cdf;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: #2d6cdf;
+	color: #fff;
+}
+
+/* Style the main section */
+main {
+	background-color: #fff;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+
+main h2 {
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+main label {
+	display: block;
+	margin-bottom: 0.5rem;
+}
+
+main input[type="text"],
+main input[type="email"],
+main input[type="tel"],
+main input[type="url"],
+main textarea {
+	width: 100%;
+	padding: 0.5rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+main input[type="text"]:focus,
+main input[type="email"]:focus,
+main input[type="tel"]:focus,
+main input[type="url"]:focus,
+main textarea:focus {
+	outline: none;
+	border-color: #2d6cdf;
+}
+
+main button[type="submit"] {
+	display: block;
+	margin-top: 1rem;
+	padding: 0.5rem;
+	background-color: #2d6cdf;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+main button[type="submit"]:hover {
+	background-color: #fff;
+	color: #2d6cdf;
+	border: 1px solid #2d6cdf;
+}
+
+/* Style form validation error messages */
+main input:invalid,
+main textarea:invalid {
+	border-color: #f00;
+}
+
+main input:invalid + span,
+main textarea:invalid + span {
+	color: #f00;
+	margin-left: 0.5rem;
+	font-size: 0.8rem;
+}
+/* Pharmacy Information Box */
+.pharmacy-info {
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.pharmacy-info h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.pharmacy-info p {
+	margin: 10px 0;
+}
+
+/* Owner Information Box */
+.owner-info {
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.owner-info h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.owner-info p {
+	margin: 10px 0;
+}
+
+/* Form */
+.form {
+	margin-bottom: 20px;
+}
+
+.form label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+}
+
+.form select {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	background-color: #fff;
+}
+
+.form input[type="submit"] {
+	background-color: #007bff;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+	background-color: #0069d9;
+}

@@ -1,0 +1,148 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    margin-top: 30px;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2d6cdf;
+    padding: 1rem;
+    color: #fff;
+  }
+  
+  header img {
+    max-height: 4rem;
+  }
+
+
+/* Style the navigation section */
+nav {
+	background-color: #fff;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+}
+
+nav li {
+	margin-right: 1rem;
+}
+
+nav a {
+	display: block;
+	padding: 0.5rem;
+	color: #2d6cdf;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: #2d6cdf;
+	color: #fff;
+}
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin: 0 10px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .burger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .line1,
+  .line2,
+  .line3 {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+  }
+  
+  /* Form styles */
+  form {
+    margin: 30px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+  }
+  
+  legend {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  .form-control {
+    margin-bottom: 20px;
+  }
+  
+  .form-check {
+    margin-bottom: 20px;
+  }
+  
+  .btn-primary {
+    background-color: #337ab7;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #23527c;
+  }
+  
+  /* Responsive styles */
+  @media only screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    .burger {
+      display: block;
+    }
+  
+    .nav-active {
+      display: flex;
+    }
+  }
+  
